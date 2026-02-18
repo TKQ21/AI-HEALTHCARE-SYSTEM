@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Activity,
   AlertTriangle,
@@ -495,17 +496,21 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-              {["Privacy Policy", "Terms of Use", "Contact"].map((link, i) => {
+              {[
+                { label: "Privacy Policy", to: "/privacy" },
+                { label: "Terms of Use", to: "/terms" },
+                { label: "Contact", to: "/contact" },
+              ].map((link, i) => {
                 const linkColors = ["hsl(197,100%,60%)", "hsl(145,100%,55%)", "hsl(320,100%,60%)"];
                 return (
-                  <a
-                    key={link}
-                    href="#"
+                  <Link
+                    key={link.label}
+                    to={link.to}
                     className="text-xs font-medium hover:underline transition-colors"
                     style={{ color: dark ? linkColors[i] : "hsl(220,60%,30%)" }}
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 );
               })}
             </div>
