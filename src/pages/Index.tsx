@@ -492,7 +492,7 @@ const Index = () => {
                 </span>
               </div>
               <p className="text-xs text-muted-foreground">Supervised Use Only</p>
-              <p className="text-xs text-muted-foreground mt-1">© 2026 All Rights Reserved</p>
+              <p className="text-xs text-muted-foreground mt-1">© 2026 Mohd Kaif</p>
             </div>
 
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
@@ -520,6 +520,7 @@ const Index = () => {
             <p className="text-[10px] text-muted-foreground">
               Clinical Decision Support Platform · Not a diagnostic tool · For supervised institutional use only
             </p>
+            <p className="text-[10px] text-muted-foreground mt-2">Built with AI assistance</p>
           </div>
         </div>
       </footer>

@@ -122,13 +122,14 @@ export default function TermsOfUse() {
 
       {/* FOOTER */}
       <footer className="relative z-10 border-t border-border/30 backdrop-blur-sm bg-background/60 px-6 py-8 text-center">
-        <p className="text-xs text-muted-foreground">© 2026 AI Healthcare System · All Rights Reserved</p>
+        <p className="text-xs text-muted-foreground">© 2026 Mohd Kaif · All Rights Reserved</p>
         <div className="flex justify-center gap-5 mt-2">
           {[{ label: "Privacy Policy", to: "/privacy" }, { label: "Terms of Use", to: "/terms" }, { label: "Contact", to: "/contact" }].map((l, i) => {
             const cols = ["hsl(197,100%,60%)", "hsl(145,100%,55%)", "hsl(320,100%,60%)"];
             return <Link key={l.label} to={l.to} className="text-xs font-medium hover:underline" style={{ color: dark ? cols[i] : "hsl(220,60%,30%)" }}>{l.label}</Link>;
           })}
         </div>
+        <p className="text-[10px] text-muted-foreground mt-3">Built with AI assistance</p>
       </footer>
     </div>
   );
